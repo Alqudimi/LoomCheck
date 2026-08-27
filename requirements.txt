@@ -1,0 +1,2 @@
+# LoomCheck intentionally has no runtime dependencies.
+# Development dependencies are declared in pyproject.toml under [project.optional-dependencies].
