@@ -1,0 +1,42 @@
+name: Bug report
+description: Report a reproducible problem in LoomCheck
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please remove secrets and confidential trace data before submitting.
+  - type: input
+    id: version
+    attributes:
+      label: LoomCheck version or commit
+      placeholder: 0.1.0 or abc1234
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: 3.12.3
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Include a small scenario and exact command.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and report excerpt
+    validations:
+      required: true

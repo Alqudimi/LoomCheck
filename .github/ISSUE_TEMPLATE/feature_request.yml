@@ -1,0 +1,26 @@
+name: Feature request
+description: Propose a focused improvement to LoomCheck
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and use case
+      description: What concrete async testing problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the user-facing API or CLI behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and trade-offs
+      description: What would this change cost in determinism, complexity, or scope?
+    validations:
+      required: true
